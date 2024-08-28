@@ -779,7 +779,7 @@ PosY = 10
 spawn(function()
     while task.wait() do
         if _G.BringMonster then
-            QuestCheck()
+            Mayngu()
             for i, v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                 if _G.LevelFarm and BringMob and v.Name == Mon and (Mon == "Factory Staff" or Mon == "Monkey" or Mon == "Dragon Crew Warrior" or Mon == "Dragon Crew Archer") and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 and (v.HumanoidRootPart.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 350 then
                     v.HumanoidRootPart.Size = Vector3.new(50, 50, 50)
